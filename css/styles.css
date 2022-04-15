@@ -184,6 +184,8 @@ rgba(47, 48, 58, 0.4)),
 	background-color: var(--accent-color);
 	font-family: inherit;
 	letter-spacing: 0.06em;
+	font-weight: 700;
+	line-height: 0.5em;
 	cursor: pointer;
 	text-align: center;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -215,12 +217,14 @@ rgba(47, 48, 58, 0.4)),
 	margin-right: 30px;
 }
 .company-icon{
+	display: flex;
+	align-items: center;
+	background-color: rgba(245, 244, 250, 1);
 	width: 270px;
 	height: 120px;
-	background-color: rgba(245, 244, 250, 1);
-	padding: 25px 100px;
 	margin-bottom: 30px;
 }
+
 /* activity*/
 .activity-items{
 	display: flex;
@@ -424,9 +428,10 @@ rgba(47, 48, 58, 0.4)),
 .social-network{
 	margin-left: 70px;
 }
-.social-link{
+.social-link > a {
 	display: block;
 	background-color: rgba(255, 255, 255, 0.1);
+	color: var(--primary-bg-color);
 	border-radius: 50%;
 	width: 44px;
 	height: 44px;
@@ -440,11 +445,12 @@ rgba(47, 48, 58, 0.4)),
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	font-size: 14px;
 }
 .social-icon{
-	fill:var(--primary-bg-color);
+	fill: currentColor;
 }
-.social-link:hover,
-.social-link:focus{
+.social-link > a:hover,
+.social-link > a:focus{
 	background-color: var(--accent-color);
 }
